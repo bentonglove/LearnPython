@@ -15,8 +15,10 @@ def main():
     print (s1) 
     print ('This is also Alger\'s greeting') #跳脫字元的使用方法
 
-    para1 = input ("請輸入性別=")   #系統內建的函數, 輸入資料
-    para2 = int(input ("請輸入年齡＝"))
+    para1 = "Ben"
+    para1 = raw_input("請輸入性別=")   #系統內建的函數, 輸入資料
+    print(type(para1))
+    para2 = int(input("請輸入年齡＝"))
     foo(para1, para2)              #呼叫函式 （函數,副程式,sub ...)
 
     print ('='* 60)                #字串的乘法
