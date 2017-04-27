@@ -1,4 +1,4 @@
-.ignore
+.gitignore
 .ipynb_checkpoints
-綜合練習題（解答）.ipynb
+*(ans).ipynb
 *.pdf
