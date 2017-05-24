@@ -1,15 +1,17 @@
 import sys, os
 
+
 def main():
     try:
         file = open(sys.argv[1], 'rb')
         for line in range(0, os.path.getsize(sys.argv[1]), 16):
-            data = file.read(16)    #一次讀入16Byte
+            data = file.read(16)  # 一次讀入16Byte
             print('{:08X} | {:47} | {}'.format(line, hex(data), str(data)))
         file.close()
-        print (hex(data))
+        print(hex(data))
     except:
         print('Usage: {} <filename>'.format(os.path.basename(sys.argv[0])))
+
 
 hex = lambda data: ' '.join('{:02X}'.format(i) for i in data)
 

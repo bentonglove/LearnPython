@@ -9,7 +9,7 @@ print (os.getcwd())
 #區塊結構的表示方法
 #函式（function)的寫法
 def main():
-    print ('Hello 大家好啊！')         #系統內建的函數, 輸出資料
+    print('Hello 大家好啊！')         #系統內建的函數, 輸出資料
 
     s1 = "This is Alger's greeting"  #字串變數
     print (s1) 
